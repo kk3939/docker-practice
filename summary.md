@@ -1,6 +1,6 @@
-# docker basic(Container virtualization technology)
+# Docker basic(Container virtualization technology)
 
-## what is Container virtualization technology?
+## What is Container virtualization technology?
 Container virtualization technology(docker) enable us to create container with docker engine.
 Container has many good points.
 
@@ -14,7 +14,7 @@ Third, it visualizes your environment.
 As I said above, we share a config file if use docker.
 By seeing at the definition in it, you can understand current environment.
 
-## main concepts
+## Main concepts
 Docker's main concepts are here.
 
 - Image
@@ -31,3 +31,69 @@ Docker's main concepts are here.
   - If you want to add commands and packages to a published image, you can create a custom image from Dockerfile.
   - I'll share how to write a config to Dockerfile later.
 
+## Command
+### Image
+
+Check image lists.
+
+```
+$ docker image ls -a
+```
+
+Download image.
+
+> You may not use this command often　because the `docker run` that is used frequently contain inside.
+
+```
+$ docker image pull
+```
+
+Delete images
+
+```
+$ docker rmi [imageID]
+```
+
+Build image from Dockerfile.
+
+```
+$ docker image build [path]
+```
+### Container
+
+Check only started container.
+If you want to check all container, you use -a option.
+
+```
+$ docker container ls
+```
+
+Create and start container.
+Check option.
+
+```
+$ docker container run
+
+# example
+# create and start nodejs_container based on node image. It is kept on and automatically deleted when is stopped.
+$ docker container run --name nodejs_container --rm -itd node  
+```
+
+Stop started container.
+
+```
+$ docker container stop [containerID or name]
+```
+
+Delete container.
+
+```
+$ docker container rm [containerID or name]
+```
+
+## How to write Dockerfile.
+
+
+## Reference
+- [docker container / image コマンド新旧比較](https://qiita.com/zembutsu/items/6e1ad18f0d548ce6c266)
+- [実践 Docker - ソフトウェアエンジニアの「Docker よくわからない」を終わりにする本](https://zenn.dev/suzuki_hoge/books/2022-03-docker-practice-8ae36c33424b59)
