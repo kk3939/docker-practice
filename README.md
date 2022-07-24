@@ -100,8 +100,34 @@ $ docker container exec -it [containerID or name] bash
 ```
 
 ## How to write Dockerfile.
+In this section, focus on a basic expression of writing Dockerfile.
+
+### FROM
+Specify base image.
+
+`FROM node:14`
+### WORKDIR
+Specify entry directory.In the following description, it will be executed in this directory.
+
+`WORKDIR /app`
+
+### RUN
+Run command.
+`RUN apt-get update`
+
+### COPY
+Copy file from host machine.
+
+`COPY .package-lock.json .`
+
+### CMD
+Command that is run when run "docker run".
+> [The main purpose of a CMD is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT instruction as well.](https://docs.docker.com/engine/reference/builder/#cmd)
+
+`CMD echo "This is a test." | wc -`
 
 
 ## Reference
 - [docker container / image コマンド新旧比較](https://qiita.com/zembutsu/items/6e1ad18f0d548ce6c266)
 - [実践 Docker - ソフトウェアエンジニアの「Docker よくわからない」を終わりにする本](https://zenn.dev/suzuki_hoge/books/2022-03-docker-practice-8ae36c33424b59)
+- [docker docs](https://docs.docker.com/)
