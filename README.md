@@ -96,7 +96,7 @@ If you want to be into container and execute command, use `docker container exec
 ```
 $ docker container exec [containerID or name] command
 # connect, into container
-$ docker container exec -it [containerID or name] command
+$ docker container exec -it [containerID or name] bash
 ```
 
 ## How to write Dockerfile.
