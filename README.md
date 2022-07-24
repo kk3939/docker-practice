@@ -91,6 +91,14 @@ Delete container.
 $ docker container rm [containerID or name]
 ```
 
+If you want to be into container and execute command, use `docker container exec`.
+
+```
+$ docker container exec [containerID or name] command
+# connect, into container
+$ docker container exec -it [containerID or name] command
+```
+
 ## How to write Dockerfile.
 
 
