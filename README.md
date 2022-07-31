@@ -66,6 +66,7 @@ If you want to check all container, you use -a option.
 
 ```
 $ docker container ls
+$ docker ps
 ```
 
 Create and start container.
@@ -73,6 +74,7 @@ Check option.
 
 ```
 $ docker container run
+$ docker run
 
 # example
 # create and start nodejs_container based on node image. It is kept on and automatically deleted when is stopped.
@@ -83,18 +85,21 @@ Stop started container.
 
 ```
 $ docker container stop [containerID or name]
+$ docker stop [containerID or name]
 ```
 
 Delete container.
 
 ```
 $ docker container rm [containerID or name]
+$ docker rm [containerID or name]
 ```
 
 If you want to be into container and execute command, use `docker container exec`.
 
 ```
 $ docker container exec [containerID or name] command
+$ docker exec [containerID or name] command
 # connect, into container
 $ docker container exec -it [containerID or name] bash
 ```
@@ -144,6 +149,7 @@ Main commands are here.
   - create and start resources.
 - `docker-compose down`
   - stop and remove resources.
+- `docker-compose exec [service name] bash`
 
 ## conclude
 Thank you for viewing.
