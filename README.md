@@ -127,12 +127,24 @@ Command that is run when run "docker run".
 `CMD echo "This is a test." | wc -`
 
 ## docker-compose
+`docker-compose` is tool that manage multiple containers on single host OS.
+I have put the sample code in this repo.
 
+```
+$ cd this_project
+$ docker-compose up -d
+```
+
+go to `http://localhost:3001/` with browser.
 
 ## conclude
 Thank you for viewing.
 
 ## Reference
+Confirm all.
 - [docker container / image コマンド新旧比較](https://qiita.com/zembutsu/items/6e1ad18f0d548ce6c266)
 - [実践 Docker - ソフトウェアエンジニアの「Docker よくわからない」を終わりにする本](https://zenn.dev/suzuki_hoge/books/2022-03-docker-practice-8ae36c33424b59)
 - [docker docs](https://docs.docker.com/)
+- [開運研修 2020 Docker](https://speakerdeck.com/cybozuinsideout/docker2020)
+- [React + Express + Docker の環境構築](https://qiita.com/ykdoi/items/488f73c4eb22dd0a066b)
+- [Node.js Web アプリケーションを Docker 化する](https://nodejs.org/ja/docs/guides/nodejs-docker-webapp/)
