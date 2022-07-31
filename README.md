@@ -137,6 +137,13 @@ $ docker-compose up -d
 
 go to `http://localhost:3001/` with browser.
 
+Main commands are here.
+
+- docker-compose up (-d)(--build)
+  - create and start resources.
+- docker-compose down
+  - stop and remove resources.
+
 ## conclude
 Thank you for viewing.
 
