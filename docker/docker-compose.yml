@@ -5,7 +5,7 @@ networks:
     driver: bridge
 
 services:
-  frontend:  # React用のコンテナ
+  frontend:
     build: .
     container_name: front
     tty: true
@@ -16,7 +16,7 @@ services:
       - 3001:3000
     networks:
       - react_express
-  backend:  # Express用のコンテナ
+  backend:
     build: .
     container_name: back
     tty: true
