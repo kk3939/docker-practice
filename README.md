@@ -128,7 +128,8 @@ Command that is run when run "docker run".
 
 ## docker-compose
 `docker-compose` is tool that manage multiple containers on single host OS.
-I have put the sample code in this repo.
+
+I have put [the sample code in this repo.](https://github.com/kk3939/docker-practice)
 
 ```
 $ cd this_project
@@ -139,16 +140,17 @@ go to `http://localhost:3001/` with browser.
 
 Main commands are here.
 
-- docker-compose up (-d)(--build)
+- `docker-compose up (-d)(--build)`
   - create and start resources.
-- docker-compose down
+- `docker-compose down`
   - stop and remove resources.
 
 ## conclude
 Thank you for viewing.
 
 ## Reference
-Confirm all.
+Sorry, following docs contain several japanese articles, but you had better confirm all.
+
 - [docker container / image コマンド新旧比較](https://qiita.com/zembutsu/items/6e1ad18f0d548ce6c266)
 - [実践 Docker - ソフトウェアエンジニアの「Docker よくわからない」を終わりにする本](https://zenn.dev/suzuki_hoge/books/2022-03-docker-practice-8ae36c33424b59)
 - [docker docs](https://docs.docker.com/)
