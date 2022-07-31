@@ -6,23 +6,17 @@ networks:
 
 services:
   frontend:
-    build: .
+    build: ./frontend
     container_name: front
     tty: true
-    volumes:
-      - ../frontend:/frontend
-    working_dir: "/frontend"
     ports:
       - 3001:3000
     networks:
       - react_express
   backend:
-    build: .
+    build: ./backend
     container_name: back
     tty: true
-    volumes:
-      - ../backend:/backend
-    working_dir: "/backend"
     ports:
       - 3002:3000
     networks:
