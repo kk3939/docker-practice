@@ -1,0 +1,29 @@
+version: '3'
+
+networks:
+  react_express:
+    driver: bridge
+
+services:
+  frontend:  # React用のコンテナ
+    build: .
+    container_name: front
+    tty: true
+    volumes:
+      - ../frontend:/frontend
+    working_dir: "/frontend"
+    ports:
+      - 3001:3000
+    networks:
+      - react_express
+  backend:  # Express用のコンテナ
+    build: .
+    container_name: back
+    tty: true
+    volumes:
+      - ../backend:/backend
+    working_dir: "/backend"
+    ports:
+      - 3002:3000
+    networks:
+      - react_express
