@@ -149,7 +149,8 @@ Main commands are here.
   - create and start resources.
 - `docker-compose down`
   - stop and remove resources.
-- `docker-compose exec [service name] bash`
+- `docker-compose exec [service name] bash (or command)`
+  - into container and execute command.
 
 ## conclude
 Thank you for viewing.
