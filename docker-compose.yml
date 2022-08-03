@@ -1,17 +1,20 @@
 version: '3'
 
-networks:
+# create network and isolate containers from the others.
+# https://docs.docker.jp/compose/compose-file/index.html#id43
+# https://knowledge.sakura.ad.jp/26522/
+networks: 
   react_express:
     driver: bridge
 
 services:
-  frontend:
-    build: ./frontend
-    container_name: front
-    tty: true
-    ports:
+  frontend: # servise name
+    build: ./frontend # path Dockerfile
+    container_name: front # container name
+    tty: true # It is needed for keeping on running container.
+    ports: # port
       - 3001:3000
-    networks:
+    networks: # atattched network 
       - react_express
   backend:
     build: ./backend
