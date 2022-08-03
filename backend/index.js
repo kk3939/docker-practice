@@ -6,7 +6,7 @@ const port = 3000;
 app.get('/user', (_, res) => {
   res.json([{
     id: 1,
-    name: "kyo9bo"
+    name: "hogehoge"
   }]);
 });
 

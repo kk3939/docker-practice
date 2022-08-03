@@ -137,11 +137,14 @@ Command that is run when run "docker run".
 I have put [the sample code in this repo.](https://github.com/kk3939/docker-practice)
 
 ```
-$ cd this_project
+$ git clone git@github.com:kk3939/docker-practice.git
+$ cd docker_practice
 $ docker-compose up -d
 ```
 
-go to `http://localhost:3001/` with browser.
+Go to `http://localhost:3001/` with browser and `hogehoge` from express(backend) is displayed.
+
+Check [docker-compose.yml](https://github.com/kk3939/docker-practice/blob/main/docker-compose.yml).
 
 Main commands are here.
 
